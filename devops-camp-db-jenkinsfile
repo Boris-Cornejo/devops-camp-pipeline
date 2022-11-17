@@ -27,7 +27,7 @@ pipeline {
                 }
             }
         }
-    
+    }
     stage('DB changes: true') {
            when {
               environment name: 'BUILD_DB', value: 'true'
@@ -47,6 +47,7 @@ pipeline {
                           }
                       }
                   }
+             }
                   post {
                       //TODO: clean local docker images
                       always {
