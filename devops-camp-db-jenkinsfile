@@ -28,6 +28,7 @@ pipeline {
                 }
             }
         }
+    }
     
 
     stage('DB changes: true') {
@@ -81,5 +82,4 @@ pipeline {
             sh 'rm -rf .git ./*'
         }
     }
-}
 }
