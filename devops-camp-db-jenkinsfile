@@ -28,7 +28,7 @@ pipeline {
                 }
             }
         }
-    }
+    
 
     stage('DB changes: true') {
            when {
